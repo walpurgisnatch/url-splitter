@@ -1,10 +1,10 @@
-(defsystem "crow"
-    :version "0.2.4"
+(defsystem "url-splitter"
+    :version "0.2.5"
     :author "Walpurgisnatch"
     :license "MIT"
     :depends-on ("cl-ppcre"
                  "quri")
     :components ((:module "src"
                   :components
-                  ((:file "crow"))))
+                  ((:file "main"))))
     :description "Creates unique wordlists from urls")
