@@ -51,7 +51,7 @@
 
 (defun split-url (url)
   (declare (type simple-string url))
-  (loop for item in (split "[.]|[/]|[?]" url)
+  (loop for item in (split "[.]|[:]|[/]|[?]" url)
         when (not (ignore-item item))
           collect item))
 
